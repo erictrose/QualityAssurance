@@ -9,7 +9,7 @@
 
 //REQUIRE
 var React = require('react-native'),
-    Dashboard = require('./Dashboard');
+    Dashboard = require('./Dashboard.js');
 
 //REACT-NATIVE COMPONENTS
 var {
@@ -55,10 +55,10 @@ class Login extends Component {
 var styles = StyleSheet.create({
 	container:{
 		marginTop: 50
-	}
+	},
     scanBox:{
         
-    }
+    },
     barcode:{
         
     }
