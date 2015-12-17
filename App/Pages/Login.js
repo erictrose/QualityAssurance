@@ -37,12 +37,14 @@ class Login extends Component {
 	render(){
 		return(
             <View style={styles.container}>
-                <TouchableHighlight onPress={()=>this.Scan()}>
-                    <View style={styles.scanBox}>
+                <View style={styles.scanTouchView}>
+                    <TouchableHighlight onPress={()=>this.Scan()}>
+                        <View style={styles.scanBoxView}>
                         <Text style={styles.scanText}>scan to login</Text>
                         <Image source={require('./Login/images/barcode.png')} style={styles.barcode} />	
-                    </View>
-                </TouchableHighlight>
+                        </View>
+                    </TouchableHighlight>
+                </View>
             </View>
 		);
 	}
@@ -58,8 +60,12 @@ var styles = StyleSheet.create({
 		flex: 1,
         backgroundColor: 'white'
 	},
-    scanBox:{
+    scanTouchView:{
         marginTop: 250,
+        alignSelf: 'center',
+        alignItems: 'center'
+    },
+    scanBoxView:{
         flexDirection: 'row',
         alignSelf: 'center',
         alignItems: 'center'
