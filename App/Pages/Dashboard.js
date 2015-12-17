@@ -37,13 +37,13 @@ class Dashboard extends Component {
         this.props.navigator.push({
             title: 'Package',
             component: Package,
+            passProps: {navigationBarHidden: 'true'},
         })
     }
     
 	render(){
 		return(
             <View style={styles.container}>
-    
                 <View style={styles.badLabelContainer}>
                     <TouchableHighlight style={styles.badLabelTouch} onPress={()=>this.badLabel()}>
                         <View>
@@ -51,7 +51,6 @@ class Dashboard extends Component {
                         </View>
                     </TouchableHighlight>
                 </View>
-    
                 <View style={styles.scanContainer}>
                     <TouchableHighlight onPress={()=>this.ScanPackage()}>
                         <View style={styles.scanImgContainer}>
