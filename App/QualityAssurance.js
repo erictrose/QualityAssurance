@@ -27,6 +27,10 @@ class QualityAssurance extends Component {
 	render(){
 		return(
             <NavigatorIOS
+                barTintColor={'#1c1e30'}
+                shadowHidden={1}
+                titleTextColor={'white'}
+                tintColor={'white'}
                 style={styles.container}
                 initialRoute={{
                     title: 'Login',
