@@ -26,7 +26,7 @@ var {
 class Login extends Component {
     //Will POST to backend for auth
     //just goes to the next page with dummy data for now
-    Scan(){
+    scanUser(){
         this.props.navigator.push({
             title: 'Dashboard',
             component: Dashboard,
@@ -38,10 +38,10 @@ class Login extends Component {
 		return(
             <View style={styles.container}>
                 <View style={styles.scanTouchView}>
-                    <TouchableHighlight onPress={()=>this.Scan()}>
+                    <TouchableHighlight onPress={()=>this.scanUser()}>
                         <View style={styles.scanBoxView}>
-                        <Text style={styles.scanText}>scan to login</Text>
-                        <Image source={require('./Login/images/barcode.png')} style={styles.barcode} />	
+                            <Text style={styles.scanText}>scan to login</Text>
+                            <Image source={require('./Login/images/barcode.png')} style={styles.barcode} />	
                         </View>
                     </TouchableHighlight>
                 </View>

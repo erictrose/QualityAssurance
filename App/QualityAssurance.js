@@ -29,7 +29,7 @@ class QualityAssurance extends Component {
             <NavigatorIOS
                 style={styles.container}
                 initialRoute={{
-                    title: 'Station #',
+                    title: 'Login',
                     component: Login
                 }}
             />
