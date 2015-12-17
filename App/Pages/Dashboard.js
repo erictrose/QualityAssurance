@@ -26,10 +26,9 @@ var {
 //COMPONENT
 //
 class Dashboard extends Component {
-    //Will logout session
-    //just goes back to the login page for now
-    Logout(){
-        this.props.navigator.pop();
+    //Will notify backend of bad label
+    badLabel(){
+        
     }
     
     //Will POST to backend for package info
@@ -47,7 +46,7 @@ class Dashboard extends Component {
             <View style={styles.container}>
     
                 <View style={styles.badLabelContainer}>
-                    <TouchableHighlight style={styles.badLabelTouch} onPress={()=>this.Logout()}>
+                    <TouchableHighlight style={styles.badLabelTouch} onPress={()=>this.badLabel()}>
                         <View>
                             <Image source={require('./Dashboard/images/bad-label.png')} />
                         </View>
