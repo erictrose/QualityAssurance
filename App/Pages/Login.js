@@ -30,7 +30,7 @@ class Login extends Component {
         this.props.navigator.push({
             title: 'Dashboard',
             component: Dashboard,
-            userInfo: {firstName: 'Eric', lastName: 'Rose', game: 0}
+            passProps: {firstName: 'Eric', lastName: 'Rose', game: 0},
         })
     }
 

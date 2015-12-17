@@ -28,7 +28,7 @@ class QualityAssurance extends Component {
 		return(
             <NavigatorIOS
                 barTintColor={'#1c1e30'}
-                shadowHidden={1}
+                shadowHidden={true}
                 titleTextColor={'white'}
                 tintColor={'white'}
                 style={styles.container}

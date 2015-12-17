@@ -37,7 +37,6 @@ class Dashboard extends Component {
         this.props.navigator.push({
             title: 'Package',
             component: Package,
-            packageInfo: {}
         })
     }
     
