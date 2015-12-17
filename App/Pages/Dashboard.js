@@ -39,7 +39,7 @@ class Dashboard extends Component {
 //****************************
 var styles = StyleSheet.create({
 	container:{
-		marginTop: 50
+        paddingTop: 80,
 	}
 });
 

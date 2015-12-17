@@ -37,10 +37,10 @@ class Login extends Component {
 	render(){
 		return(
             <View style={styles.container}>
-                <Text>Login Page</Text>
                 <TouchableHighlight onPress={()=>this.Scan()}>
                     <View style={styles.scanBox}>
-                        <Image source={{uri:'./Login/images/barcode.png'}} style={styles.barcode} />	
+                        <Text style={styles.scanText}>scan to login</Text>
+                        <Image source={require('./Login/images/barcode.png')} style={styles.barcode} />	
                     </View>
                 </TouchableHighlight>
             </View>
@@ -54,13 +54,23 @@ class Login extends Component {
 //****************************
 var styles = StyleSheet.create({
 	container:{
-		marginTop: 50
+        paddingTop: 80,
+		flex: 1,
+        backgroundColor: 'white'
 	},
     scanBox:{
-        
+        marginTop: 250,
+        flexDirection: 'row',
+        alignSelf: 'center',
+        alignItems: 'center'
+    },
+    scanText:{
+        fontSize: 50,
     },
     barcode:{
-        
+        height: 100,
+        width: 80,
+        marginLeft: 20
     }
 });
 
