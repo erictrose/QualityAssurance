@@ -48,7 +48,6 @@ class QualityAssurance extends Component {
 var styles = StyleSheet.create({
 	container:{
         flex: 1,
-		backgroundColor: '#ef553a',
 	}
 });
 

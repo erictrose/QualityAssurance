@@ -28,19 +28,19 @@ class Package extends Component {
     //
     //
     Damaged(){
-        this.props.navigator.push({
-            title: 'Dashboard',
-            component: Dashboard,
-        })
+        
     }
     
     //
     //
     Cancel(){
-        this.props.navigator.push({
-            title: 'Dashboard',
-            component: Dashboard,
-        })
+        
+    }
+
+    //
+    //
+    Mark(){
+        
     }
     
 	render(){
@@ -67,7 +67,33 @@ class Package extends Component {
                 </View>
                                                
                                                
-                                               
+
+    
+    
+                <View style={styles.unitContainer}>
+                    <View style={styles.buttonContainer}>
+                        <TouchableHighlight style={styles.buttonTouch} onPress={()=>this.Mark()}>
+                            <Text></Text>
+                        </TouchableHighlight>
+                    </View>
+                    <View style={styles.infoContainer}>
+                        <View style={styles.imageContainer}>
+                            <Image source={require('./Package/images/toothbrush.png')} style={styles.image}/>
+                        </View>
+                        <View style={styles.descContainer}>
+                            <View style={styles.descPosition}>
+                                <Text>position</Text>
+                            </View>
+                            <View style={styles.descName}>
+                                <Text>name</Text>
+                            </View>
+                            <View style={styles.descDesc}>
+                                <Text>description</Text>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+
                                                
                                                
                                            
@@ -90,13 +116,14 @@ var styles = StyleSheet.create({
     headerContainer:{
         flexDirection: 'row',
         justifyContent: 'space-between',
+        marginBottom: 80,
     },
     damagedContainer:{
-        marginLeft: 20
+        marginLeft: 20,
     },
     damagedTouch:{
         width: 118,
-        height: 118
+        height: 118,
     },
     packageInfo:{
         alignSelf: 'flex-end',
@@ -111,23 +138,39 @@ var styles = StyleSheet.create({
         width: 118,
         height: 118
     },
-    scanContainer:{
-        marginTop: 80,
-        alignSelf: 'center',
-        alignItems: 'center'
+    unitContainer:{
+        flexDirection: 'row',
     },
-    scanImgContainer:{
-        flexDirection: 'column',
-        alignSelf: 'center',
-        alignItems: 'center'
+    buttonContainer:{
+        height: 250,
+        width: 250,
+        backgroundColor: 'green',
+        alignSelf: 'flex-start',
+        borderColor: '#1c1e30',
+        borderWidth: 3,
     },
-    scanText:{
-        fontSize: 50,
+    buttonTouch:{
+        width: 250,
+        height: 250
     },
-    packageImg:{
-        width: 300,
-        height: 193
-    }
+    infoContainer:{
+        flexDirection: 'row',
+        flex: 10,
+    },
+    imageContainer:{
+        flex: 4,
+        alignItems: 'center',
+        maxHeight: 250,
+    },
+    image:{
+        maxHeight: 250,
+        maxWidth: 250
+    },
+    descContainer:{
+        backgroundColor: 'purple',
+        flex: 6,
+    },
+    
 });
 
 //****************************
