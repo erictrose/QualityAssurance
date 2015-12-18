@@ -29,6 +29,12 @@ var {
 //COMPONENT
 //
 class Unit extends Component {
+    //
+    //
+    Mark(){
+        
+    }
+    
 	render(){
 		return(
             <View style={styles.container}>

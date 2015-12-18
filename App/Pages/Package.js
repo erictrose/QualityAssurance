@@ -48,12 +48,6 @@ class Package extends Component {
     Cancel(){
         
     }
-
-    //
-    //
-    Mark(){
-        
-    }
     
     //
     //
