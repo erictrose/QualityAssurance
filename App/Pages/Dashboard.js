@@ -28,7 +28,6 @@ var {
 	StyleSheet,
     Image,
 	TouchableHighlight,
-    NavigatorIOS,
 } = React;
 
 //COMPONENT
@@ -45,7 +44,6 @@ class Dashboard extends Component {
         this.props.navigator.push({
             title: 'Package',
             component: Package,
-            passProps: {navigationBarHidden: 'true'},
         })
     }
     

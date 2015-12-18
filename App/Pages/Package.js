@@ -37,22 +37,19 @@ var {
 //
 class Package extends Component {
     
-    //
-    //
+    //Will notify backend of damaged or otherwise failing box.
     Damaged(){
         
     }
     
-    //
-    //
+    //Cancel performing QA on the package
     Cancel(){
-        
+        this.props.navigator.pop()
     }
     
-    //
-    //
+    //Will notify backend of package pass or fail
     PassFail(){
-        
+        this.props.navigator.pop()
     }
     
 	render(){
