@@ -1177,6 +1177,40 @@ return Array.from(arr);}};})(
 
 
 typeof global!=='undefined'?global:typeof self!=='undefined'?self:this);
+(
+function(GLOBAL){
+
+
+
+
+
+
+
+function getInvalidGlobalUseError(name){
+return new Error(
+'You are trying to render the global '+name+' variable as a '+
+'React element. You probably forgot to require '+name+'.');}
+
+
+GLOBAL.Text={
+get defaultProps(){
+throw getInvalidGlobalUseError('Text');}};
+
+
+GLOBAL.Image={
+get defaultProps(){
+throw getInvalidGlobalUseError('Image');}};
+
+
+
+if(GLOBAL.document){
+GLOBAL.document.createElement=null;}
+
+
+
+
+GLOBAL.MutationObserver=undefined;})(
+this);
 __d('QualityAssurance/index.ios.js',function(global, require, module, exports) {  'use strict';
 
 
@@ -57618,4 +57652,4 @@ __d('QualityAssurance/App/Pages/Login/images/barcode.png',function(global, requi
 });
 ;require("InitializeJavaScriptAppEngine");
 ;require("QualityAssurance/index.ios.js");
-__SSTOKENSTRING = "@generated SignedSource<<612636bf131864dc0273e2b6c07bc6b8>>";
+//@ sourceMappingURL=/index.ios.map
