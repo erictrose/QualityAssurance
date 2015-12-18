@@ -63,16 +63,16 @@ class Package extends Component {
                                 </View>
                             </TouchableHighlight>
                         </View>
-                        <View style={styles.packageInfo}>
-                            <Text style={styles.packageText}>Package with <Text style={styles.packageTextNumber}>X</Text> items</Text>    
-                        </View>
                         <View style={styles.cancelContainer}>
                             <TouchableHighlight style={styles.cancelTouch} onPress={()=>this.Cancel()}>
                                 <View>
                                     <Image source={require('./Package/images/cancel.png')} />
                                 </View>
                             </TouchableHighlight>
-                        </View>                    
+                        </View> 
+                        <View style={styles.packageInfo}>
+                            <Text style={styles.packageText}>Package with <Text style={styles.packageTextNumber}>X</Text> items</Text>    
+                        </View>                   
                     </View>
                         <Unit />
                         <Unit />
@@ -101,18 +101,19 @@ var styles = StyleSheet.create({
 	},
     headerContainer:{
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         marginBottom: 80,
     },
     damagedContainer:{
-        marginLeft: 20,
+        left: 20,
+        position: 'absolute'
     },
     damagedTouch:{
         width: 118,
         height: 118,
     },
     packageInfo:{
-        alignSelf: 'flex-end',
+        marginTop: 75,
     },
     packageText:{
         fontSize: 40,
@@ -121,7 +122,8 @@ var styles = StyleSheet.create({
         color: 'green'
     },
     cancelContainer:{
-        marginRight: 20,
+        right: 20,
+        position: 'absolute'
     },
     cancelTouch:{
         width: 118,

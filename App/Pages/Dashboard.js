@@ -70,11 +70,13 @@ class Dashboard extends Component {
 //****************************
 var styles = StyleSheet.create({
 	container:{
-        paddingTop: 80,
 		flex: 1,
+        justifyContent: 'center',
 	},
     badLabelContainer:{
-        marginLeft: 20
+        top: 80,
+        left: 20,
+        position: 'absolute'
     },
     badLabelTouch:{
         width: 118,
@@ -83,7 +85,7 @@ var styles = StyleSheet.create({
     scanContainer:{
         marginTop: 80,
         alignSelf: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     scanImgContainer:{
         flexDirection: 'column',
