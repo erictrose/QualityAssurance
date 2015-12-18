@@ -102,7 +102,7 @@ var styles = StyleSheet.create({
     headerContainer:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 40,
+        marginBottom: 80,
     },
     damagedContainer:{
         marginLeft: 20,
