@@ -29,8 +29,8 @@ var {
 //COMPONENT
 //
 class Unit extends Component {
-    //
-    //
+
+    //Will mark the unit as failing and display fail options
     Mark(){
         
     }
