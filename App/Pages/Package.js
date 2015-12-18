@@ -45,37 +45,46 @@ class Package extends Component {
         
     }
     
+    //
+    //
+    PassFail(){
+        
+    }
+    
 	render(){
 		return(
             <View style={styles.container}>
-                <View style={styles.headerContainer}>
-                    <View style={styles.damagedContainer}>
-                        <TouchableHighlight style={styles.damagedTouch} onPress={()=>this.Damaged()}>
-                            <View>
-                                <Image source={require('./Package/images/bad-box.png')} />
-                            </View>
+                <ScrollView>
+                    <View style={styles.headerContainer}>
+                        <View style={styles.damagedContainer}>
+                            <TouchableHighlight style={styles.damagedTouch} onPress={()=>this.Damaged()}>
+                                <View>
+                                    <Image source={require('./Package/images/bad-box.png')} />
+                                </View>
+                            </TouchableHighlight>
+                        </View>
+                        <View style={styles.packageInfo}>
+                            <Text style={styles.packageText}>Package with <Text style={styles.packageTextNumber}>X</Text> items</Text>    
+                        </View>
+                        <View style={styles.cancelContainer}>
+                            <TouchableHighlight style={styles.cancelTouch} onPress={()=>this.Cancel()}>
+                                <View>
+                                    <Image source={require('./Package/images/cancel.png')} />
+                                </View>
+                            </TouchableHighlight>
+                        </View>                    
+                    </View>
+                        <Unit />
+                        <Unit />
+                        <Unit />
+                        <Unit />
+                        <Unit />
+                    <View style={styles.passFailContainer}>
+                        <TouchableHighlight style={styles.passFailTouch} onPress={()=>this.PassFail()}>
+                            <Text style={styles.passFailText}>Pass</Text>
                         </TouchableHighlight>
                     </View>
-                    <View style={styles.packageInfo}>
-                        <Text style={styles.packageText}>Package with <Text style={styles.packageTextNumber}>X</Text> items</Text>                
-                    </View>
-                    <View style={styles.cancelContainer}>
-                        <TouchableHighlight style={styles.cancelTouch} onPress={()=>this.Cancel()}>
-                            <View>
-                                <Image source={require('./Package/images/cancel.png')} />
-                            </View>
-                        </TouchableHighlight>
-                    </View>                    
-                </View>
-                
-            <ScrollView>
-                <Unit />
-                <Unit />
-                <Unit />
-                <Unit />
-                <Unit />
-            </ScrollView>
-
+                </ScrollView>
             </View>
 		);
 	}
@@ -87,7 +96,7 @@ class Package extends Component {
 //****************************
 var styles = StyleSheet.create({
 	container:{
-        paddingTop: 80,
+        paddingTop: 15,
 		flex: 1,
 	},
     headerContainer:{
@@ -117,6 +126,22 @@ var styles = StyleSheet.create({
     cancelTouch:{
         width: 118,
         height: 118
+    },
+    passFailContainer:{
+        height: 150,
+        width: 400,
+        backgroundColor: 'green',
+        alignSelf: 'center',
+        marginTop: 70,
+        marginBottom: 40,
+        borderRadius: 15
+    },
+    passFailTouch:{
+        width: 400,
+        height: 150
+    },
+    passFailText:{
+        fontSize: 72
     },
 });
 
