@@ -46,7 +46,7 @@ class Unit extends Component {
                     </View>
                     <View style={styles.infoContainer}>
                         <View style={styles.imageContainer}>
-                            <Image source={require('./images/toothbrush.png')} style={styles.image}/>
+                            <Image source={require('./Unit/images/toothbrush.png')} style={styles.image}/>
                         </View>
                         <View style={styles.descContainer}>
                             <View style={styles.descTopContainer}>
