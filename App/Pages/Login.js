@@ -56,12 +56,10 @@ class Login extends Component {
 //****************************
 var styles = StyleSheet.create({
 	container:{
-        paddingTop: 80,
 		flex: 1,
-        backgroundColor: 'white'
+        justifyContent: 'center',
 	},
     scanTouchView:{
-        marginTop: 250,
         alignSelf: 'center',
         alignItems: 'center'
     },
