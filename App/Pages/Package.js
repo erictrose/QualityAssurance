@@ -57,7 +57,7 @@ class Package extends Component {
                         </TouchableHighlight>
                     </View>
                     <View style={styles.packageInfo}>
-                        <Text style={styles.packageText}>Package with X items</Text>                
+                        <Text style={styles.packageText}>Package with <Text style={styles.packageTextNumber}>X</Text> items</Text>                
                     </View>
                     <View style={styles.cancelContainer}>
                         <TouchableHighlight style={styles.cancelTouch} onPress={()=>this.Cancel()}>
@@ -107,6 +107,9 @@ var styles = StyleSheet.create({
     },
     packageText:{
         fontSize: 40,
+    },
+    packageTextNumber:{
+        color: 'green'
     },
     cancelContainer:{
         marginRight: 20,
