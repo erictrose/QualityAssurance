@@ -1,13 +1,21 @@
 /* 
 
     Dashboard Page
+    
+    Custom Components:
+    Login - this is the NavigatorIOS's previous route.
+    Package - this is the NavigatorIOS's next route.
+    
+    This Component:
+    Has the planned ability to say the label is unscannable.
+    Has the planned ability to scan a package, POST to the backend for package info, and pass that info to the package page.
 
 */
 
 //ES6 best practice?
 'use strict';
 
-//REQUIRE
+//CUSTOM COMPONENTS
 var React = require('react-native'),
     Login = require('./Login'),
     Package = require('./Package');
@@ -76,11 +84,11 @@ var styles = StyleSheet.create({
     badLabelContainer:{
         top: 80,
         left: 20,
-        position: 'absolute'
+        position: 'absolute',
     },
     badLabelTouch:{
         width: 118,
-        height: 118
+        height: 118,
     },
     scanContainer:{
         marginTop: 80,
@@ -90,14 +98,14 @@ var styles = StyleSheet.create({
     scanImgContainer:{
         flexDirection: 'column',
         alignSelf: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     scanText:{
         fontSize: 50,
     },
     packageImg:{
         width: 300,
-        height: 193
+        height: 193,
     }
 });
 

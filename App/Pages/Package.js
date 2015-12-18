@@ -1,13 +1,23 @@
 /* 
 
     Package Page
+    
+    Custom Components:
+    Dashboard - this is the NavigatorIOS's previous route.
+    Unit - this is the componentized unit row with button, unit image and unit info.
+    
+    This Component:
+    Has the ability to say the box is damaged or otherwise failing.
+    Has the ability to cancel doing QA on this package.
+    Displays number of units in the package.
+    Brings in <Unit> components for every unit in the package.
 
 */
 
 //ES6 best practice?
 'use strict';
 
-//REQUIRE
+//CUSTOM COMPONENTS
 var React = require('react-native'),
     Dashboard = require('./Dashboard'),
     Unit = require('./Package/Unit');
@@ -106,7 +116,7 @@ var styles = StyleSheet.create({
     },
     damagedContainer:{
         left: 20,
-        position: 'absolute'
+        position: 'absolute',
     },
     damagedTouch:{
         width: 118,
@@ -119,15 +129,15 @@ var styles = StyleSheet.create({
         fontSize: 40,
     },
     packageTextNumber:{
-        color: 'green'
+        color: 'green',
     },
     cancelContainer:{
         right: 20,
-        position: 'absolute'
+        position: 'absolute',
     },
     cancelTouch:{
         width: 118,
-        height: 118
+        height: 118,
     },
     passFailContainer:{
         height: 140,
@@ -141,7 +151,7 @@ var styles = StyleSheet.create({
     passFailTouch:{
         width: 500,
         height: 140,
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     passFailText:{
         fontSize: 72,

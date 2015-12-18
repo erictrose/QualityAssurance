@@ -1,13 +1,20 @@
 /* 
 
     Login Page
+    
+    Custom Components:
+    Dashboard - this is the NavigatorIOS's next route.
+    
+    This Component:
+    Has a touchable highlight that moves the nav to the next page via the scanUser function.
+    Will eventually scan the employees barcode and POST to the backend for authentication.
 
 */
 
 //ES6 best practice?
 'use strict';
 
-//REQUIRE
+//CUSTOM COMPONENTS
 var React = require('react-native'),
     Dashboard = require('./Dashboard.js');
 
@@ -61,12 +68,12 @@ var styles = StyleSheet.create({
 	},
     scanTouchView:{
         alignSelf: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     scanBoxView:{
         flexDirection: 'row',
         alignSelf: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     scanText:{
         fontSize: 50,
@@ -74,7 +81,7 @@ var styles = StyleSheet.create({
     barcode:{
         height: 100,
         width: 80,
-        marginLeft: 20
+        marginLeft: 20,
     }
 });
 

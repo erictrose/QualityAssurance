@@ -2,14 +2,18 @@
 
     Main Quality Assurance Application
     
-    bringing in NavigatorIOS
+    Custom Components:
+    Login - this is the NavigatorIOS's initial route.
+    
+    This Component:
+    Simply renders the NavigatorIOS, which handles everything else.
 
 */
 
 //ES6 best practice?
 'use strict';
 
-//REQUIRE
+//CUSTOM COMPONENTS
 var React = require('react-native'),
     Login = require('./Pages/Login');
 

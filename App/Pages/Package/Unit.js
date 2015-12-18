@@ -1,13 +1,19 @@
 /* 
 
     Unit component
+    
+    Custom Components:
+    None
+    
+    This Component:
+    this is the componentized unit row with button, unit image and unit info.
 
 */
 
 //ES6 best practice?
 'use strict';
 
-//REQUIRE
+//CUSTOM COMPONENTS
 var React = require('react-native');
 
 //REACT-NATIVE COMPONENTS
@@ -79,7 +85,7 @@ var styles = StyleSheet.create({
     },
     buttonTouch:{
         width: 250,
-        height: 250
+        height: 250,
     },
     infoContainer:{
         flexDirection: 'row',
@@ -92,7 +98,7 @@ var styles = StyleSheet.create({
     },
     image:{
         maxHeight: 250,
-        maxWidth: 250
+        maxWidth: 250,
     },
     descContainer:{
         flex: 6,
@@ -113,16 +119,16 @@ var styles = StyleSheet.create({
     },
     descName:{
         alignSelf: 'flex-end',
-        paddingLeft: 20
+        paddingLeft: 20,
     },
     descNameText:{
-        fontSize: 22
+        fontSize: 22,
     },
     descDesc: {
         flex: 1,
         paddingLeft: 20,
         paddingTop: 20,
-        paddingRight: 20
+        paddingRight: 20,
     },
     descDescText:{
         fontSize: 18,
