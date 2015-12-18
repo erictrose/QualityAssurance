@@ -128,20 +128,23 @@ var styles = StyleSheet.create({
         height: 118
     },
     passFailContainer:{
-        height: 150,
-        width: 400,
+        height: 140,
+        width: 500,
         backgroundColor: 'green',
         alignSelf: 'center',
         marginTop: 70,
-        marginBottom: 40,
-        borderRadius: 15
+        marginBottom: 45,
+        borderRadius: 15,
     },
     passFailTouch:{
-        width: 400,
-        height: 150
+        width: 500,
+        height: 140,
+        justifyContent: 'center'
     },
     passFailText:{
-        fontSize: 72
+        fontSize: 72,
+        fontWeight: '300',
+        alignSelf: 'center',
     },
 });
 
