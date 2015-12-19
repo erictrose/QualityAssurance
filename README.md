@@ -23,4 +23,4 @@ How to run on iPad:<br>
 3) open ios>QualityAssurance.xcodeproj in Xcode<br>
 4) select your device (not iPad simulator) as target device<br>
 5) Hit run (you may need to stop and start again if the translator isnt loaded yet)<br><br>
-note: it is bundled for offline use, but there is a bug with the png's on the package page.<br>
+note: it is bundled for offline use, but there is a bug with the png's.<br>
