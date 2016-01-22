@@ -1,9 +1,9 @@
 Quality Assurance
 =============
-*IOS application* 
 <!--[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)-->
 <!--[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)-->
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges) <br>
+*IOS application* <br>
 Ipad app for performing quality assurance checks in a warehouse environment. <br>
 
 [Design Process](http://imgur.com/a/IvHJL) <br>
